@@ -1,0 +1,57 @@
+:root{
+    --primary-color: #22D3EE;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: auto;
+    padding-top: 1rem;
+}
+main{
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+label{
+    display: block;
+    font-size: larger;
+    font-weight: 600;
+}
+div{
+    display: block;
+    padding: 1rem;
+}
+input{
+    padding: 0.5rem 1rem;
+    width: 80%;
+    border: 2px solid var(--primary-color);
+    border-radius: 0.2rem;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.output{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer{
+    padding: 2rem;
+    background-color: var(--primary-color);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
