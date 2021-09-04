@@ -12,7 +12,9 @@ function clickHandler(){
     var q = quantity.value;
     var cp = currentPrice.value;
     calculate(ip, q, cp);
+    
 }
+
 function calculate(iniPrice, quant, currPrice){
     if(iniPrice > currPrice){
         var loss = (iniPrice - currPrice) * quant;
