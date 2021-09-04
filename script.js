@@ -17,13 +17,16 @@ function calculate(iniPrice, quant, currPrice){
     if(iniPrice > currPrice){
         var loss = (iniPrice - currPrice) * quant;
         var lossPercent = (loss / iniPrice) * 100;
+        output.style.color = 'red';
         output.innerText = `You are in Loss! The loss is ${loss} and loss percentage ${lossPercent}`;
         // output.innerText =
     }else if(currPrice > iniPrice){
         var profit = (currPrice - iniPrice) * quant;
         var profitPercent = (profit / iniPrice) * 100;
-        output.innerText = `you are in Profit! The Profit is ${profit} and profit percentage is ${profitPercent}.`;
+        output.style.color = 'green';
+        output.innerText = `You are in Profit! The Profit is ${profit} and profit percentage is ${profitPercent}.`;
     }else{
-        output.innerText = 'No Pain No gain!';
+        output.innerText = 'No Pain No gain! No gain No Pain';
+        output.style.color = 'red';
     }
 }
