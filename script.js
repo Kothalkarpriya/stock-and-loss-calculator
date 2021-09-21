@@ -5,9 +5,18 @@ var currentPrice = document.querySelector('#current-price');
 var button = document.querySelector('#button');
 var output = document.querySelector('#output');
 
-button.addEventListener('click', clickHandler);
+button.addEventListener('click', checkInput);
+
+function checkInput(){
+    if(initialPrice.value == '' && quantity.value == '' && currentPrice.value == ''){
+        alert('Inputs can not be left blank');
+    }
+    clickHandler();
+
+}
 
 function clickHandler(){
+    // var checkedInputs = checkInput()
     var ip = initialPrice.value;
     var q = quantity.value;
     var cp = currentPrice.value;
