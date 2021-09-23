@@ -20,11 +20,21 @@ function checkInput() {
 
 function clickHandler() {
     // var checkedInputs = checkInput()
+
     var ip = initialPrice.value;
     var q = quantity.value;
     var cp = currentPrice.value;
-    calculate(ip, q, cp);
+    checking(ip, q, cp);
+}
 
+function checking(ip, q, cp){
+    if(ip > 0 && q > 0 && cp > 0){
+        calculate(ip,q,cp);
+    }
+    else{
+        output.style.color = 'red';
+        output.innerText = 'Please input values correct.';
+    }
 }
 
 function calculate(iniPrice, quant, currPrice) {
