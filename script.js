@@ -21,9 +21,9 @@ function checkInput() {
 function clickHandler() {
     // var checkedInputs = checkInput()
 
-    var ip = initialPrice.value;
-    var q = quantity.value;
-    var cp = currentPrice.value;
+    var ip = Number(initialPrice.value);
+    var q = Number(quantity.value);
+    var cp = Number(currentPrice.value);
     checking(ip, q, cp);
 }
 
